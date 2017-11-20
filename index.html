@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	
+	<title>京东-分类</title>
+  	<!-- 浏览器的默认样式 reset.css   网易nec-->
+  	<link rel="stylesheet" href="./css/reset.css">
+ 	 <!-- 浏览器的兼容样式  normalize.css  著名库 -->
+  	<link rel="stylesheet" href="./css/normalize.css">
+  	<!-- 当前页面的css -->
+  	<link rel="stylesheet" href="./css/index.css">
+  	<!-- 引入favicon 快捷方式： link:favicon  -->
+  	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+	<!-- 整体布局 -->
+	<div class="jd">
+		
+		<!-- 一.顶部搜索 -->
+		<header class="jd_search">
+			<!-- 左边logo -->
+			<a href="javascript:;" class="logo"></a>
+			<!-- 搜索框 -->
+			<div class="box">
+				<!-- 放大镜 -->
+				<i></i>
+				<!-- 搜索栏 -->
+				<input type="text" placeholder="100万超级爆品疯抢">
+			</div>
+			<!-- 登陆 -->
+			<a href="javascipt:;" class="login">登陆</a>
+		</header>
+
+			
+		<!-- 二. 中间内容 -->
+		<div class="content">
+			<!-- 1. 轮播图 -->
+			<ul>
+				<li>
+					<a href="javascript:;">
+						<img src="upload/slide_1.jpg" alt="">
+					</a>
+				</li>
+			</ul>
+			
+			<!-- 2. 8个图标 -->
+			<div class="icon">
+				<ul>
+					<li>
+            			<a href="javascript:;">
+              				<img src="./images/nav_1.png" alt="">
+             				 <strong>京东超市</strong>
+            			</a>
+          			</li>
+          			<li>
+            			<a href="javascript:;">
+              				<img src="./images/nav_2.png" alt="">
+              				<strong>全球购</strong>
+            			</a>
+          			</li>
+          			<li>
+            			<a href="javascript:;">
+              				<img src="./images/nav_3.png" alt="">
+              				<strong>充值中心</strong>
+            			</a>
+          			</li>
+          			<li>
+            			<a href="javascript:;">
+              				<img src="./images/nav_4.png" alt="">
+              				<strong>服装城</strong>
+            			</a>
+          			</li>
+          			<li>
+           				<a href="javascript:;">
+              				<img src="./images/nav_5.png" alt="">
+              				<strong>理财</strong>
+            			</a>
+          			</li>
+          			<li>
+            			<a href="javascript:;">
+              				<img src="./images/nav_6.png" alt="">
+              				<strong>领券</strong>
+            			</a>
+          			</li>
+          			<li>
+            			<a href="javascript:;">
+              				<img src="./images/nav_7.png" alt="">
+              				<strong>物流查询</strong>
+            			</a>
+          			</li>
+          			<li>
+            			<a href="javascript:;">
+              				<img src="./images/nav_8.png" alt="">
+              				<strong>我的关注</strong>
+           				</a>
+          			</li>
+				</ul>
+			</div>
+
+
+
+
+
+
+
+		</div>
+
+
+		<!-- 三. 底部工具栏 -->
+
+
+
+
+	</div>
+
+
+
+	<!-- 
+	a标签(span, i, b ) display:block
+	浮动后要在父元素上 overflow: hidden;
+	padding: 之后要用box-sizing: border-box
+	
+	字的颜色: 除了#333 #666 #999 之外都要用吸管吸颜色
+
+	基线对齐: vertical-align: middle 
+	
+	清除子元素的浮动: clear:box
+					  clearfix
+					  overflow: hidden
+
+	属性选择器: nth-child(-n+3): 代表前三个
+
+	自动出现省略号: 1. 单行出现省略号
+					white-space: nowrap (强制不换行)
+					text-overflow: ellipsis  (单行出现省略号)
+					overflow: hidden;
+					
+					2. 多行出现省略号: 
+						overflow: hidden;
+						(-wenkit-box就是dislpay:flex的旧语法)
+						display: -wenkit-box;
+						(是 dislay: flex的旧语法)
+						-wenkit-box-orient: vertical;
+						(控制内容显示几行(是几行后后面就写数字几))
+						-wenkit-line-clamp: 2;
+	
+	剪切: background-clip: content-box;
+
+	display: line-block (中间会有间隙 如果换行了的话)
+			  (如果换行, 给其父元素设置font-site: 0 , 不失真,少用)
+
+	用了line-block,如果图片水平方向没有对齐的话,就是用vertical:middle,(这是基线对齐)  
+
+
+
+	滚动: 
+		overflow-y: auto (让页面滚动, 出现滚动条)
+		(只要页面足够的长就可以使用)
+		惯性滚动: (插件-> iScroll) ? 在github中搜索
+				  使用方法: 
+
+					<div id="wrapper">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+
+					<script>
+						var myScorll = new IScroll("#wrapper");
+					</script>
+				(注意点: 给最外层aside这个div灰色盒子overflow:hidden),ul中将高度的100%去掉
+
+	伸缩盒子: 处理换行后的结果: filex:所占容器的剩余的比例
+								order：调整顺序
+								aline-selif: 控制自身的	
+	 -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

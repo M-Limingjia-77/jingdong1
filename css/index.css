@@ -1,0 +1,134 @@
+html, body {
+	background-color: #f7f7f7;
+}
+.jd {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* 在移动端会有一些元素出现手指触摸之后出现背景颜色 去除掉 */
+/* 在ios系统中 所有input都会自带一个内阴影  你通过很多方法都去除不掉 */
+/* -webkit-appearance: none; 可以去除掉内阴影 */
+/*   */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 一.顶部搜索 */
+.jd_search {
+	/* 固定定位 */
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: 40px;
+	background-color: #c91523;
+	z-index: 10;
+}
+/* 京东图标 */
+.jd_search .logo {
+	display: block;
+	position: absolute;
+
+	/* calc: 是用来计算属性的值的 
+	   运算符两边一定要有空格 
+	   (搜索框的高度-logo的高度) / 2
+	*/
+	top: -87px;
+	left: 9px;
+	/* logo的大小 */
+	width: 60px;
+  	height: 114px;
+
+	background-image: url("../images/jd-sprites.png");
+	background-size: 200px 200px;
+	background-position: 0 -216px;
+}
+/* 搜索框 */
+.jd_search .box {
+	width: 100%;
+	height: 100%;
+
+	padding-left: 75px;
+	padding-right: 50px;
+	box-sizing: border-box;
+
+	position: relative;
+}
+.jd_search .box i {
+	position: absolute;
+	top: 13px;
+	left: 84px;
+
+	width: 20px;
+	height: 20px;
+
+	background-image: url("../images/jd-sprites.png");
+	background-size: 200px 200px;
+	background-position: -60px -112px;
+}
+.jd_search .box  input {
+	width: 100%;
+	height: 30px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	/* 搜索框四个角为圆角 */
+	border-radius: 15px;
+
+	/* 里面文字距离边框的距离 */
+	padding: 0px 30px;
+	box-sizing: border-box;
+}
+.jd_search .login {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+	width: 63px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+
+} 
+
+
+/* 二. 中间内容 */
+/* 1. 轮播图 */
+.content {
+	width: 100%;
+ }
+ .content img {
+ 	width: 100%;
+ 	vertical-align: middle;
+ }
+/* 8个图标 */
+.content .icon {
+	width: 100px;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+/* 三. 底部工具栏 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

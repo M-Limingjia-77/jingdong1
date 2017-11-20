@@ -1,0 +1,205 @@
+.jd_sort {
+	width: 100%;
+	margin: 0 auto;
+}
+/* 顶部搜索栏 */
+.jd_search {
+	/* 固定导航栏 */
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 45px;
+	background-image: url("../images/header-bg.png"); 
+	/* 背景图片设置为原来大小的一半(原来的尺寸是2*88) */
+	background-size: 1px 44px;
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #ccc;
+}
+/* 左边logo */
+.jd_search .logo_l {
+	position: absolute;
+	top: 5px;
+	left: 7px;
+
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	padding: 0px 11px;
+	box-sizing: border-box;
+
+	background: url("../images/jd-sprites.png") -12px 10px;
+	background-size: 200px 200px;
+	/* 切除周围的东西 */
+	background-clip: content-box;
+}
+/* 搜索框 */
+.jd_search .search_box {
+	width: 100%;
+	height: 100%;
+	padding: 10px 50px;
+	box-sizing: border-box;
+}
+/* 搜索框 */
+.jd_search .search_box input {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	padding: 0px 5px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+/* 右边的logo */
+.jd_search .logo_r {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+	width: 40px;
+	height: 40px;
+	/* line-height: 40px; */
+	display: block;
+	padding: 10px 11px;
+	box-sizing: border-box;
+
+	background: url("../images/jd-sprites.png") -49px 10px;
+	background-size: 200px 200px;
+	/* 切除周围的东西 */
+	background-clip: content-box;
+}
+
+
+/* 中间的内容 */
+/* 侧的边栏 */
+ .jd_content {
+ 	/* 固定定位 */
+ 	display: flex;
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+
+	width: 100%;
+	height: 100%;
+	padding-top: 45px;
+	box-sizing: border-box;
+}
+.jd_content .jd_menu {
+	width: 90px;
+	height: 100px;
+}
+.jd_content .jd_menu ul {
+	width: 100%;
+
+}
+.jd_menu ul li {
+	width: 100%;
+	height: 50px;
+	
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	line-height: 50px;
+	text-align: center;
+
+	font-size: 14px;
+	background-color: #f3f4f6;
+}
+.jd_menu .hot {
+	color: #c95213;
+	background-color: #fff;
+	border-right: none;
+	
+}
+
+/* 右边的内容 */
+/* 1. 热门推荐 */
+.jd_free {
+	/*  */
+	flex:1;
+	height: 100%;
+	width: 100%;
+	background-color:#fff;
+
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	overflow-y: auto;
+}
+.jd_hotrec h4, .buy h4, .kinds h4, .skirt h4 {
+	font-size: 12px;
+	color: #666;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.jd_hotrec ul {
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	/* 因为li浮动了,所以要在li的父元素上清除浮动 */
+	overflow: hidden;
+}
+.jd_hotrec ul li {
+	float: left;
+	/* 每行占三个100/3 */
+	width: 33.33333%;
+	box-sizing: border-box;
+	height: 50px;
+
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	line-height: 50px;
+	text-align: center;
+	
+}
+
+
+/* 2.热门导购  3.热卖品类  4.裙类 */
+.jd_free .buy, .jd_free .kinds, .jd_free .skirt {
+	width: 100%;
+}
+.jd_free .buy ul, .jd_free .kinds ul, .jd_free .skirt ul {
+	width: 100%;
+	overflow: hidden;
+	/* font-size: 0; */
+}
+.jd_free .buy li, .jd_free .kinds li, .jd_free .skirt li {
+	display: inline-block;
+	width: 32.33333%;
+	/* box-sizing: border-box; */
+	vertical-align: middle;
+}
+
+.jd_free .buy li a, .jd_free .kinds li a, .jd_free .skirt li a {
+	width: 100%;
+	display: block;
+}
+
+.jd_free .buy ul li img, .jd_free .kinds ul li img, .jd_free .skirt ul li img {
+	width: 100%;
+}
+
+.jd_free .buy li span, .jd_free .kinds li span, .jd_free .skirt li span {
+	display: block;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
